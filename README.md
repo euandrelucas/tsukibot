@@ -1,5 +1,4 @@
-# TsukiBot
-## Funcionalidades
+## TsukiBot
 Bom, a mesma coisa de sempre mas já que você quer saber:
 > 1. Comandos
 - t!help = Mostra todos os meus comandos disponiveis
