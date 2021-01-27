@@ -16,11 +16,15 @@ public class cmdHelp implements Command {
     @Override
     public void action(String[] args, MessageReceivedEvent event) {
 
+        var foto = event.getJDA().getSelfUser().getEffectiveAvatarUrl();
+
         var embed = new EmbedBuilder();
                 embed.setTitle("Tsuki | Help");
+                embed.setThumbnail(foto);
                 embed.setDescription("> **COMANDOS**\n" +
                         "\n`t!help` - Mostra os Comandos" +
-                        "\n`t!ping` - Mostra a latência do bot");
+                        "\n`t!ping` - Mostra a latência do bot" +
+                        "\n`t!avatar` - Mostra o seu avatar");
                 embed.setColor(Color.RED);
         event.getTextChannel().sendMessage(
                 embed.build()
